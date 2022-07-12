@@ -5,23 +5,26 @@
 
 /*--Estilos Menu Header*/
 
-nav{
+nav__color{
+    background-color: white;
+}
+
+
+/*nav{
     width: 100%;
     margin-top: 10px;
 }
 
-/*este ul tambien afecta al footer*/
+*/
 
 ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    /*display: flex;
+    flex-direction: row;*/
     align-items: center;
-    list-style: none;
-    flex-wrap: wrap;
+    
 }
 
-.navbar{
+.navba{
     text-decoration: none;
     color: rgb(12, 12, 1);
     font-size: 1.2rem;
@@ -33,12 +36,19 @@ ul{
     transition: all 1s;
 }
 
-.navbar:hover{
+.navba:hover{
     border-color: black;
 }
 
 .header__logo{
     max-width: 120px;
+}
+
+.foot{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around
+
 }
 
 
@@ -59,6 +69,10 @@ ul{
 
 }
 
+.img100{
+    width: 100%;
+
+}
 .video{
     width: 100%;
     grid-area: video;
@@ -84,8 +98,19 @@ ul{
     grid-area: mapa;
 }
 
-.promo__texto{
-    font-size: 100px;
+.centrado{              /*Centro los elementos del grid del index*/
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+/*-------Animacion de la Promo-------*/
+
+.promo__texto{          
+    font-size: 70px;
     text-align: center;
     animation-name:efecto;
     animation-iteration-count: infinite;
