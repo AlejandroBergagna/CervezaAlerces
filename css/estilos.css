@@ -10,18 +10,18 @@ nav__color{
 }
 
 
-/*nav{
-    width: 100%;
-    margin-top: 10px;
-}
-
-*/
 
 ul{
-    /*display: flex;
-    flex-direction: row;*/
     align-items: center;
-    
+
+}
+
+
+/*--- tipografia de la descripcion de los estilos ----*/
+
+.estilos__texto {
+
+font-family: 'Edu VIC WA NT Beginner', cursive;
 }
 
 .navba{
@@ -44,10 +44,25 @@ ul{
     max-width: 120px;
 }
 
+
+/*-- Estilo del Footer --*/
+
 .foot{
     display: flex;
     flex-direction: row;
-    justify-content:space-around
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+
+.foot li{
+
+    list-style: none;
+}
+
+.foot a{
+    text-decoration: none;
+    color: black;
+    
 
 }
 
