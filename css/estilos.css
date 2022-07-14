@@ -249,6 +249,16 @@ picture img{
 
 /*--Estilos Formulario--*/
 
+
+.borde{
+    border-color: black;
+    
+}
+
+.altura{
+    height: 320px;
+}
+
 .formulario{
     display: flex;
     flex-direction: column;
