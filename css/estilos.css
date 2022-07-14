@@ -151,6 +151,12 @@ ul{
 
 /*----Estilos Nosotros*/
 
+.nosotros__texto{
+    text-align: center;
+    font-size: xx-large;
+}
+
+
 .gridnos{
     display: grid;
     grid-template-columns: repeat(12,1fr);
