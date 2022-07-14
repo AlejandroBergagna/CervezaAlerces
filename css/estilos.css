@@ -17,12 +17,6 @@ ul{
 }
 
 
-/*--- tipografia de la descripcion de los estilos ----*/
-
-.estilos__texto {
-
-font-family: 'Edu VIC WA NT Beginner', cursive;
-}
 
 .navba{
     text-decoration: none;
@@ -286,6 +280,21 @@ textarea{
 
 /*----Estilos estilos--*/
 
+/*redondeo bordes de imagenes en la pagina esilos*/
+
+.bordes{
+    border-radius: 5rem;
+
+}
+
+/*--- tipografia de la descripcion de los estilos ----*/
+
+.estilos__texto {
+
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    }
+
+    
 .gridestilos{
     display: grid;
     grid-template-columns: repeat(4,1fr);
