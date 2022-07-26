@@ -1,56 +1,8 @@
-@import "variables";
+@import './misc/variables';
+@import './misc/normalize';
+@import './partials/header';
+@import './partials/footer';
 
-*{
-    margin: 0;
-    padding: 0;
-}
-
-/*--Estilos Menu Header*/
-
-nav__color{
-    background-color: white;
-}
-
-
-
-ul{
-    align-items: center;
-
-}
-
-
-
-.navba{
-    text-decoration: none;
-    color: rgb(12, 12, 1);
-    font-size: 1.2rem;
-    border: 2px solid #fff;
-    font-style: italic;
-    font-weight: bold;
-    
-    padding: 0.5rem;
-    transition: all 1s;
-}
-
-.navba:hover{
-    border-color: black;
-}
-
-.header__logo{
-    width: 180px;
-    height: 75px;
-
-}
-
-/*-- Estilo del Footer --*/
-
-
-.foot a{
-    text-decoration: none;
-    color: black;
-    
-
-}
 
 
 /* Estilos Main Index*/
@@ -69,6 +21,8 @@ ul{
     gap: 2rem;
 
 }
+
+
 
 .img100{
     width: 100%;
@@ -246,10 +200,19 @@ textarea{
 
 /*--- tipografia de la descripcion de los estilos ----*/
 
+
+.estilos__titulo {
+    font-size: $text-size1;
+    color: $text-color1;
+}
+
+
+
+
 .estilos__texto {
-    font-size: 30px;
-    font-family: 'Edu VIC WA NT Beginner', cursive;
-    }
+    font-size: $text-size2;
+    color: $text-color2;    
+}
 
     
   /*  
@@ -485,13 +448,18 @@ textarea{
     }
    
     /*cambio tamaño de letra en pagina estilos*/
+    
+    .estilos__titulo{
+        font-size: 25px;
+    }
+
     .estilos__texto {
         font-size: 15px;
     }
        
    
    
-    /*pagna contacto*/
+    /*pagina contacto*/
 
     .tama1{
         font-size: small;
@@ -526,6 +494,10 @@ textarea{
 }
 
 /*cambio tamaño de letra en pagina estilos*/
+
+.estilos__titulo{
+    font-size: 30px;
+}
 
 .estilos__texto {
     font-size: 20px;
