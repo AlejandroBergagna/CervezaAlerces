@@ -3,7 +3,7 @@
 @import './misc/operator';
 @import './partials/header';
 @import './partials/footer';
-
+@import './pagescss/contacto';
 
 
 /* Estilos Main Index*/
@@ -146,10 +146,6 @@ picture img{
 /*--Estilos Formulario--*/
 
 
-.borde{
-    border-color: black;
-    
-}
 
 .altura{
     height: 320px;
@@ -216,95 +212,6 @@ textarea{
 }
 
     
-  /*  
-.gridestilos{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(auto);
-    margin-top: 2rem;
-    gap: 2rem;
-
-}
-
-.gridestilos img{
-    border-radius: 5rem;
-}
-
-.gridestilos h2{
-    text-align: center;
-    margin: 1rem;
-}
-.gridestilos p{
-    text-align: center;
-    margin: 1rem;
-}
-
-.gridestilos__rubia{
-    grid-column: 1 / 5;
-    grid-row: 2 / 3;
-}
-
-.gridestilos__imgrubia1{
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-
-}
-
-.gridestilos__imgrubia2{
-    grid-column: 3 / 4;
-    grid-row: 1 / 2;
-}
-
-
-.gridestilos__roja{
-    grid-column: 1 / 5;
-    grid-row: 4 / 5;
-}
-
-.gridestilos__imgroja1{
-    grid-column: 2 / 3;
-    grid-row: 3 / 4;
-
-}
-
-.gridestilos__imgroja2{
-    grid-column: 3 / 4;
-    grid-row: 3 / 4;
-}
-.gridestilos__negra{
-    grid-column: 1 / 5;
-    grid-row: 6 / 7;
-}
-
-.gridestilos__imgnegra1{
-    grid-column: 2 / 3;
-    grid-row: 5 / 6;
-
-}
-
-.gridestilos__imgnegra2{
-    grid-column: 3 / 4;
-    grid-row: 5 / 6;
-}
-.gridestilos__apa{
-    grid-column: 1 / 5;
-    grid-row: 8 / 9;
-}
-
-.gridestilos__imgapa1{
-    grid-column: 2 / 3;
-    grid-row: 7 / 8;
-
-}
-
-.gridestilos__imgapa2{
-    grid-column: 3 / 4;
-    grid-row: 7 / 8;
-}
-
-*/
-
-
 
 
 /*--Responsive para Mobile---*/
@@ -541,14 +448,3 @@ textarea{
 
 
 
-
-/*
-.header__logo {
-    padding-top: 0;
-    max-width: 120px;
-}
-
-ul a{
-    display: inline-block;
-    padding-top: 1rem;
-}*/
