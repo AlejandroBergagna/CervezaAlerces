@@ -1,0 +1,12 @@
+@mixin titulos ($font-size, $color) {
+    font-size: $font-size;
+    color: $color;
+}
+
+h1 {
+    @include titulos ($text-size1, $text-color1);
+}
+
+h2 {
+    @include titulos($text-size2, $text-color1);
+}
