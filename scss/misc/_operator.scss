@@ -1,3 +1,5 @@
+/*TAMAÑO Y COLOR DE TITULOS Y SUBTITULOS*/
+
 @mixin titulos ($font-size, $color) {
     font-size: $font-size;
     color: $color;
@@ -9,4 +11,38 @@ h1 {
 
 h2 {
     @include titulos($text-size2, $text-color1);
+}
+
+/*ANIMACION DE LA PROMO*/
+
+.promo {
+    &__texto{          
+    font-size: 70px;
+    text-align: center;
+    animation-name:efecto;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    }
+}
+
+@keyframes efecto{
+    0%{
+        color:black;
+    }
+    25%{
+        color:white;
+
+    }
+    50%{
+        color:blueviolet;
+    }
+    75%{
+        color:white;
+
+    }
+    100%{
+        color: darkgreen;
+
+    }
 }

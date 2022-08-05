@@ -11,6 +11,20 @@
 body {
   font-family: "Edu VIC WA NT Beginner", cursive; }
 
+.centrado {
+  /*Centro los elementos del grid del index*/
+  display: flex;
+  padding: 0.5rem;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center; }
+
+.estilos__texto {
+  font-size: 30px;
+  color: #646475; }
+
+/*TAMAÑO Y COLOR DE TITULOS Y SUBTITULOS*/
 h1 {
   font-size: 40px;
   color: black; }
@@ -18,6 +32,27 @@ h1 {
 h2 {
   font-size: 30px;
   color: black; }
+
+/*ANIMACION DE LA PROMO*/
+.promo__texto {
+  font-size: 70px;
+  text-align: center;
+  animation-name: efecto;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-delay: 1s; }
+
+@keyframes efecto {
+  0% {
+    color: black; }
+  25% {
+    color: white; }
+  50% {
+    color: blueviolet; }
+  75% {
+    color: white; }
+  100% {
+    color: darkgreen; } }
 
 .nav__color {
   background-color: white; }
@@ -45,9 +80,11 @@ ul {
 .header__men:hover{
          color: $text-color1;
 }*/
-.foot a {
-  text-decoration: none;
-  color: black; }
+.foot {
+  padding-top: 2rem; }
+  .foot a {
+    text-decoration: none;
+    color: black; }
 
 .contact {
   display: flex;
@@ -56,118 +93,6 @@ ul {
   align-items: center;
   justify-content: center;
   justify-content: space-around; }
-
-.borde {
-  border-color: black; }
-
-.prueba {
-  font-size: 150px; }
-
-/* Estilos Main Index*/
-.gridindex {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto auto;
-  grid-template-areas: "video video video video" "promo publi imag mapa";
-  justify-items: center;
-  align-items: center;
-  padding: 0 2rem;
-  gap: 2rem; }
-
-.img100 {
-  width: 100%; }
-
-.video {
-  width: 100%;
-  grid-area: video; }
-
-.promo {
-  width: 100%;
-  grid-area: promo; }
-
-.publi {
-  width: 100%;
-  grid-area: publi; }
-
-.imag {
-  width: 100%;
-  grid-area: imag; }
-
-.mapa {
-  width: 100%;
-  grid-area: mapa; }
-
-.centrado {
-  /*Centro los elementos del grid del index*/
-  display: flex;
-  padding: 0.5rem;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  justify-items: center; }
-
-/*-------Animacion de la Promo-------*/
-.promo__texto {
-  font-size: 70px;
-  text-align: center;
-  animation-name: efecto;
-  animation-iteration-count: infinite;
-  animation-duration: 1s;
-  animation-delay: 1s; }
-
-@keyframes efecto {
-  0% {
-    color: black; }
-  25% {
-    color: white; }
-  50% {
-    color: blueviolet; }
-  75% {
-    color: white; }
-  100% {
-    color: darkgreen; } }
-
-/*----Estilos Nosotros*/
-.nosotros__texto {
-  text-align: center;
-  font-size: xx-large; }
-
-/*----Estilos Productos------*/
-.barriles {
-  display: flex;
-  flex-direction: row;
-  padding: 2rem; }
-
-.producto {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-items: center;
-  margin: 0 1rem; }
-
-picture img {
-  width: 100%; }
-
-/*--Estilos Contacto--*/
-.contacto {
-  padding: 2rem;
-  display: flex;
-  flex-direction: row; }
-
-.contacto__formulario {
-  width: 50%;
-  display: flex;
-  background-color: blanchedalmond;
-  padding: 0.5rem; }
-
-/*--Estilos Formulario--*/
-.altura {
-  height: 320px; }
-
-.formulario {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem; }
 
 input {
   border-radius: 10px;
@@ -179,99 +104,22 @@ textarea {
   padding: 1rem;
   margin: 0.5rem; }
 
-.contacto__imagen {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 50%;
-  background-color: blanchedalmond;
-  padding: 0.5rem;
-  gap: 2rem; }
+.borde {
+  border-color: black; }
 
-.contacto__imagen h2 {
-  text-align: center;
-  font-size: medium; }
+.altura {
+  height: 320px; }
 
-/*----Estilos estilos--*/
-/*redondeo bordes de imagenes en la pagina esilos*/
+/* media para mobile */
+@media (min-width: 320px) and (max-width: 576px) {
+  .contact__mapa {
+    padding: 2rem; } }
+
+.nosotros__texto {
+  text-align: center; }
+
 .bordes {
   border-radius: 5rem; }
-
-/*--- tipografia de la descripcion de los estilos ----*/
-.estilos__titulo {
-  font-size: 40px;
-  color: black; }
-
-.estilos__texto {
-  font-size: 30px;
-  color: #646475; }
-
-/*--Responsive para Mobile---*/
-@media only screen and (max-width: 480px) {
-  /*----HOME------*/
-  .gridindex {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: auto auto auto auto auto;
-    grid-template-areas: "video" "promo" "publi" "imag"  "mapa";
-    justify-items: center;
-    align-items: center;
-    padding: 0 2rem;
-    gap: 2rem; }
-  /*MENU*/
-  ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-    flex-wrap: wrap; }
-  /*productos*/
-  .barriles {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem; }
-  /*contactos*/
-  .contacto {
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  input {
-    width: 110px; }
-  textarea {
-    width: 110px; }
-  /*nosotros*/
-  .gridnos {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto 100px auto 100px;
-    margin: 2rem; }
-  .gridnos__img1 {
-    grid-column: 1 / 13;
-    grid-row: auto; }
-  .gridnos__text1 {
-    grid-column: 1 / 13;
-    grid-row: auto; }
-  .gridnos__img2 {
-    grid-column: 1 / 13;
-    grid-row: auto; }
-  .gridnos__text2 {
-    grid-column: 1 / 13;
-    grid-row: auto; } }
-
-.tama1 {
-  font-size: x-large; }
-
-.mapa1 {
-  width: 40%;
-  margin-top: 5rem;
-  margin-bottom: 5rem; }
-
-.form1 {
-  width: 40%;
-  margin-top: 5rem;
-  margin-bottom: 5rem; }
 
 /* media para mobile */
 @media (min-width: 320px) and (max-width: 576px) {
@@ -290,14 +138,7 @@ textarea {
   .estilos__titulo {
     font-size: 25px; }
   .estilos__texto {
-    font-size: 15px; }
-  /*pagina contacto*/
-  .tama1 {
-    font-size: small; }
-  .form1 {
-    width: 80%; }
-  .mapa1 {
-    width: 80%; } }
+    font-size: 15px; } }
 
 /* media para tablet */
 @media (min-width: 577px) and (max-width: 991px) {
@@ -316,11 +157,4 @@ textarea {
   .subtitle {
     font-size: 25px; }
   .estilos__texto {
-    font-size: 20px; }
-  /*pagina contacto*/
-  .tama1 {
-    font-size: medium; }
-  .form1 {
-    width: 50%; }
-  .mapa1 {
-    width: 50%; } }
+    font-size: 20px; } }

@@ -1,0 +1,16 @@
+.centrado{              /*Centro los elementos del grid del index*/
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+
+.estilos{
+    &__texto {
+    font-size: $text-size2;
+    color: $text-color2;    
+    }
+}
